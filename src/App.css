@@ -1,8 +1,9 @@
 * {
-  /* border: 1px solid red; */
-  font-family: 'Open Sans', sans-serif;
-  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
   margin: 0;
+  padding: 0;
   border: 0;
 }
 
@@ -11,7 +12,116 @@
   flex-direction: column;
 }
 
-.movies-component, .movies-container, ul {
+/* Header */
+
+.movies-component-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  width: 1010pxs;
+}
+
+.header-title {
+  height: 80px;
+}
+
+.genre-buttons {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px; */
+  background-color: black;
+  width: 1010px;
+}
+
+.genre-buttons button {
+  background-color: black;
+  color: rgb(220, 220, 220);
+  padding-bottom: 5px;
+}
+
+/* Movies */
+
+.movies-container {
+  display: flex;
+  padding: 0 200px;
+  margin-top: 60px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Movie */
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 30%;
+  list-style-type: none;
+  margin-bottom: 60px;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+.movie-poster:hover {
+  opacity: 0.8;
+}
+
+/* .movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+} */
+
+.movie-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  color: black;
+}
+
+.movie-title-anchor {
+  color: black;
+  text-decoration: none;
+}
+
+.movie-title-anchor:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.movie-plot {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.date-rating-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-release-date {
+  font-size: 13px;
+  font-style: italic;
+  color: rgb(70, 70, 70);
+}
+
+.movie-vote-average, .average-rating-title {
+  font-size: 13px;
+  font-style: italic;
+  color: rgb(70, 70, 70);
+}
+
+/* .movies-component, .movies-container, ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,4 +287,4 @@ img {
 
 .movie-plot {
   margin-bottom: 25px;
-}
+} */
