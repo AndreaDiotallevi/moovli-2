@@ -32,15 +32,9 @@ class Movies extends Component {
     return (
       <div className='movies-component' data-test="movies">
         <div className='movies-component-header'>
-          <div className='header-title'></div>
-          {/* <button className='back-home-button' onClick={this.props.onBackToHome}>Home</button>
-          <h1 className='movies-country-message' data-test="movies-country-message">
-            You Have Chosen
-            {' '}
-            {this.props.country}
-            !
-          </h1>
-          <button className='fake-button'></button> */}
+          <div className='header-title-container'>
+            <p class='header-title'>YOU ARE IN {this.props.country.toUpperCase()}</p>
+          </div>
           <div className='genre-buttons'>
             {this.state.genreList.map((genre, index) => <button className='genre-button'
                                                       value={genre}
@@ -70,7 +64,6 @@ class Movies extends Component {
                         {movie.title.toUpperCase()}
                       </h2>
                     </a>
-                    {/* <a href={`https://www.imdb.com/title/${movie.imdbID}/`}><img className='imdb-logo' src={imdbLogo}></img></a> */}
                   </div>
                   <p className='movie-plot' data-test={`movie-plot-${movie.imdbID}`}>
                     {movie.plot}
