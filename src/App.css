@@ -18,7 +18,7 @@ button:focus {
 
 /* Header */
 
-.movies-component-header {
+.movies-component-header, .home-component-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,13 +26,13 @@ button:focus {
   width: 1010pxs;
 }
 
-.header-title-container {
+.header-title-container, .home-header-title {
   display: flex;
   align-items: center;
   height: 60px;
 }
 
-.header-title {
+.header-title, .home-header-title {
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -47,7 +47,7 @@ button:focus {
   width: 1010px;
 }
 
-.genre-buttons button {
+.genre-buttons button, .home-header-description {
   background-color: black;
   /* color: rgb(220, 220, 220); */
   color: white;
@@ -92,13 +92,6 @@ ul {
   opacity: 0.8;
 }
 
-/* .movie-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-} */
-
 .movie-title {
   font-weight: 500;
   font-size: 16px;
@@ -139,171 +132,3 @@ ul {
   font-style: italic;
   color: rgb(70, 70, 70);
 }
-
-/* .movies-component, .movies-container, ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.movies-component {
-  justify-content: center;
-}
-
-.movies-container {
-  background-color: rgb(235,235,235, 0.8);
-}
-
-.movie {
-  padding: 25px;
-  list-style-type: none;
-  display: flex;
-  margin: 50px;
-  justify-content: space-between;
-  background-color: white;
-  width: 70%;
-  flex-direction: row;
-}
-
-.movie-info {
-  background-color: #6c757d;
-  margin-right: 25px;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column; 
-  width: 60%;
-  padding: 25px;
-}
-
-.movie-image {
-  width: 45%;
-}
-
-p {
-  font-size: 19px;
-  color: rgb(230, 230, 230);
-}
-
-h2 {
-  font-size: 32px;
-  color: white;
-  margin-bottom: 30px;
-}
-
-.genre-buttons {
-  background-color: #6c757d;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-left: 0;
-  padding-right: 0;
-  flex: 1;
-  right: 0;
-  left: 0;
-}
-
-button {
-  background-color: #6c757d;
-  color: white;
-  font-size: 19px;
-  margin: 15px 10px;
-  border: none;
-  font-weight: bold;
-  justify-content: space-between;
-}
-
-.movies-component-header, .home-header {
-  background-color: rgb(35, 35, 35);
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.movies-country-message, .home-header-title {
-  color: white;
-  text-align: center;
-  margin: 30px 0;
-}
-
-.home-header-title {
-  color: white;
-  text-align: center;
-  margin: 30px 0;
-  margin-left: 25px;
-}
-
-.back-home-button {
-  background-color: rgb(35, 35, 35);
-  margin-left: 25px;
-}
-
-.fake-button {
-  background-color: rgb(35, 35, 35);
-}
-
-.genre-button:hover {
-  color: rgb(35, 35, 35);
-  transition: 0.4s;
-}
-
-.genre-button {
-  margin-right: 25px;
-  margin-left: 25px;
-}
-
-.movie-vote-average {
-  font-size: 16px;
-}
-
-.movie-genre-list {
-  font-size: 16px;
-}
-
-.average-genres-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.movie-release-date {
-  font-style: italic;
-  font-size: 16px;
-}
-
-.average-rating-title, .movie-genre-title, .movie-release-date-title {
-  font-weight: bold;
-  color: white;
-}
-
-img {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.title-plot-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.movie-title-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.imdb-logo {
-  width: 70px;
-  margin-top: 6px;
-}
-
-.movie-plot {
-  margin-bottom: 25px;
-} */

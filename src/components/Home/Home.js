@@ -2,9 +2,10 @@ import React from 'react';
 import MapContainer from '../MapContainer/MapContainer';
 
 const Home = (props) => (
-  <div className="home-container" data-test="app">
-    <div className="home-header">
-      <h1 className="home-header-title" data-test="app-title">Moovli - Click on a country and find the best movies from that country!</h1>
+  <div className="home-component" data-test="app">
+    <div className="home-component-header">
+      <h1 className="home-header-title" data-test="app-title">MOOVLI</h1>
+      <p className='home-header-description'>Click on a country and find the best movies from that country!</p>
     </div>
     <div className="map-container">
       <MapContainer
