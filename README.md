@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/AndreaDiotallevi/moovli.svg?style=shield)](https://circleci.com/gh/AndreaDiotallevi/moovli) [![Test Coverage](https://api.codeclimate.com/v1/badges/87da0866aaa9dfb4ead6/test_coverage)](https://codeclimate.com/github/AndreaDiotallevi/moovli/test_coverage)</p>
-
 # Moovli
 
 [Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
@@ -12,7 +10,7 @@ Introducing Moovli - a movie suggestion app that allows you to find the best mov
 
 ## Live Demo
 
-The application is deployed to Heroku at this link: [https://moovli.herokuapp.com](https://moovli.herokuapp.com/)
+The application is deployed to Heroku at this link: [To be completed]()
 
 ## The Team
 
@@ -30,28 +28,6 @@ This was a group project during the final two weeks at [Makers Academy](https://
 * Handle nested asynchronous requests from multiple APIs within a React application.
 * Deploy a front-end app to Heroku, given API restrictions for production websites.
 * Use Python to scrape data from the internet and save it into a usable JSON format.
-
-## Features
-
-* If you go to the Moovli homepage [https://moovli.herokuapp.com](https://moovli.herokuapp.com/) you will see a map of the world:
-
-![Homapage](./images/1-homepage.png)
-
-* If you click on a country that doesn't have any available movie, the info window shows a useful message to the user:
-
-![No Movies](./images/2-no-movies.png)
-
-* If you click on a country that has available movies, you are redirected to the movies page, with the best movies from that country:
-
-![Movies](./images/3-movies.png)
-
-* If you click on one of the genre buttons, you can filter the movies by genre:
-
-![Filter Movies by Genre](./images/4-filter-by-genre.png)
-
-* If you click on the IMDB link, you are redirected to the IMDB web page of the selected movie:
-
-![Imdb Hyperlink](./images/5-imdb.png)
 
 ## User Stories
 
