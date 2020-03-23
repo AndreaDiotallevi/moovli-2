@@ -1,16 +1,14 @@
-# Moovli
+# The Movie Mapper
 
-[Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
+[Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality)
 
 ## Description
 
-Struggling to find a great movie? Are you spending hours scrolling down Netflix as your eyes glaze over and you become increasingly bored?
-
-Introducing Moovli - a movie suggestion app that allows you to find the best movies from across the world. Moovli allows users to interact with a map and click on any country to see some of best movies available.
+This is a single page application made with React that allows the user to click on a country from a map and see a suggestion of the best movies for that country. The user can then filter the movies by genre and expand the research by clicking on the movie poster, to be redirected to the IMDB movie page.
 
 ## Live Demo
 
-The application is deployed to Heroku at this link: [To be completed]()
+The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com/](https://www.themoviemapper.com/)
 
 ## The Team
 
@@ -20,6 +18,8 @@ This was a group project during the final two weeks at [Makers Academy](https://
 * [Hisham Bokhari](https://github.com/hishambokhari)
 * [Andrea Diotallevi](https://github.com/AndreaDiotallevi)
 * [Daniel Martinez-Gatell](https://github.com/denriquem)
+
+After the course, I refined the application by implementing asynchronous tests, re-designing the styling and deploying it to AWS with a custom domain.
 
 ## Challenges and Goals
 
@@ -120,7 +120,3 @@ The application has four react components and each of them has a clear responsib
 ## Code Quality
 
 [ESLint](https://eslint.org/): tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
-
-## Continuous Integration
-
-[CircleCI](https://circleci.com/): tool for automating the development process quickly, safely, and at scale.
