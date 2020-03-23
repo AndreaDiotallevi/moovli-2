@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import imdbLogo from '../../imdb.png';
-import noPhotoAvailable from '../../no-photo-available.jpg';
+import noPhotoAvailable from '../../assets/no-photo-available.jpg';
+import leftArrow from '../../assets/left-arrow.png'
 
 class Movies extends Component {
   state = {
@@ -33,6 +33,8 @@ class Movies extends Component {
       <div className='movies-component' data-test="movies">
         <div className='movies-component-header'>
           <div className='header-title-container'>
+            <button className='back-home-button' onClick={this.props.onBackToHome}><img className='back-home-button' src={leftArrow}></img></button>
+            {/* <a href={`https://www.imdb.com/title/${movie.imdbID}/`}><img className='imdb-logo' src={imdbLogo}></img></a> */}
             <p class='header-title'>YOU ARE IN {this.props.country.toUpperCase()}</p>
           </div>
           <div className='genre-buttons'>
@@ -44,7 +46,6 @@ class Movies extends Component {
             <button value={'All'} className='genre-button' onClick={this.handleGenreChoice}>All</button>
           </div>
         </div>
-
         <div className='movies-container' data-test="movies-container">
           <ul>
             {this.filterMovies().map((movie, index) => (
@@ -73,12 +74,6 @@ class Movies extends Component {
                   <p className='movie-release-date' data-test={`movie-release-date-${movie.imdbID}`}>
                     <span className='movie-release-date-title'></span>{movie.releaseDate}
                   </p>
-                  {/* <p className='movie-vote-average' data-test={`movie-vote-average-${movie.imdbID}`}>
-                    <span className='average-rating-title'>IMDB Rating: </span>{movie.imdbRating}
-                  </p> */}
-                  {/* <p className='movie-genre-list' data-test={`movie-genre-list-${movie.imdbID}`}>
-                    <span className='average-rating-title'>Genres: </span>{movie.genreList.join(", ")}
-                  </p> */}
                 </div>
               </div>
             </li>
