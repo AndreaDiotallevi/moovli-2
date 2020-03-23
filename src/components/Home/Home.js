@@ -5,7 +5,7 @@ const Home = (props) => (
   <div className="home-component" data-test="app">
     <div className="home-component-header">
       <h1 className="home-header-title" data-test="app-title">MOOVLI</h1>
-      <p className='home-header-description'>Click on a country and find the best movies from that country!</p>
+      <p className='home-header-description' data-test='home-header-description'>Click on a country and find the best movies from that country!</p>
     </div>
     <div className="map-container">
       <MapContainer

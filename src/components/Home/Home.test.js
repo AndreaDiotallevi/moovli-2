@@ -13,9 +13,15 @@ describe('Home', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it("should render the title 'Moovli'", () => {
+  it("should render the title MOOVLI", () => {
     const wrapper = setUp(Home, {});
     const h1 = wrapper.find("[data-test='app-title']");
-    expect(h1.text()).toEqual('Moovli - Click on a country and find the best movies from that country!');
+    expect(h1.text()).toEqual('MOOVLI');
+  });
+
+  it("should render the title description", () => {
+    const wrapper = setUp(Home, {});
+    const p = wrapper.find("[data-test='home-header-description']");
+    expect(p.text()).toEqual('Click on a country and find the best movies from that country!');
   });
 });

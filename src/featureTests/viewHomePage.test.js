@@ -13,9 +13,9 @@ describe('User can view the home page', () => {
     expect(wrapper).toHaveLength(1);
   })
 
-  it("should render the title 'Moovli'", () => {
+  it("should render the title MOOVLI", () => {
     const h1 = wrapper.find("[data-test='app-title']");
     expect(h1).toHaveLength(1);
-    expect(h1.text()).toEqual("Moovli - Click on a country and find the best movies from that country!");
+    expect(h1.text()).toEqual("MOOVLI");
   })
 })

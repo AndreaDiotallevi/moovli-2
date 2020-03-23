@@ -35,7 +35,7 @@ class Movies extends Component {
           <div className='header-title-container'>
             <button className='back-home-button' onClick={this.props.onBackToHome}><img className='back-home-button' src={leftArrow}></img></button>
             {/* <a href={`https://www.imdb.com/title/${movie.imdbID}/`}><img className='imdb-logo' src={imdbLogo}></img></a> */}
-            <p class='header-title'>YOU ARE IN {this.props.country.toUpperCase()}</p>
+            <h1 className='header-title' data-test='movie-country-message'>YOU ARE IN {this.props.country.toUpperCase()}</h1>
           </div>
           <div className='genre-buttons'>
             {this.state.genreList.map((genre, index) => <button className='genre-button'

@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import Movies from './components/Movies/Movies';
 import fetchCountryCode from './api/fetchCountryCode'
 import fetchMovies from './api/fetchMovies'
-import countryCodesJson from './countryCodes.json';
+import countryCodesJson from './utils/countryCodes.json';
 import fetchCoordinates from './api/fetchCoordinates';
 
 class App extends Component {

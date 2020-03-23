@@ -93,7 +93,6 @@ ul {
 .movie {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   width: 30%;
   list-style-type: none;
   margin-bottom: 60px;

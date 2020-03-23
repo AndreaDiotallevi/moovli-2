@@ -1,5 +1,5 @@
 import fetchMovieData from './fetchMovieData';
-import movieTitlesJson from '../movieTitles.json';
+import movieTitlesJson from '../utils/movieTitles.json';
 
 const fetchMovies = (country) => {
   const moviesTitles = movieTitlesJson[country];

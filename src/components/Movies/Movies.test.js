@@ -15,13 +15,13 @@ describe('Movies', () => {
     plot: 'plot',
     releaseDate: '2020-01-01',
     imdbRating: 9.5,
-    posterURL: 'https://image.tmdb.org/t/p/w400/dom2esWWW8C9jS2v7dOhW48LwHh.jpg',
+    posterURL: 'url',
     genreList: ['Comedy'],
   };
 
   beforeEach(() => {
     wrapper = setUp(Movies, {
-      country: 'Poland',
+      country: 'UK',
       movies: [movie1],
       selectedGenre: null,
     });
@@ -31,14 +31,14 @@ describe('Movies', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it("should render 'You Have Chosen Poland! when clicked within UK", () => {
-    const h1 = wrapper.find("[data-test='movies-country-message']");
-    expect(h1.text()).toEqual('You Have Chosen Poland!');
+  it("should render 'YOU ARE IN UK when clicked within UK", () => {
+    const h1 = wrapper.find("[data-test='movie-country-message']");
+    expect(h1.text()).toEqual('YOU ARE IN UK');
   });
 
   it('should render the movies title', () => {
     const h2 = wrapper.find("[data-test='movie-title-1']");
-    expect(h2.text()).toEqual('title');
+    expect(h2.text()).toEqual('TITLE');
   });
 
   it('should render the movies plot', () => {
@@ -51,14 +51,9 @@ describe('Movies', () => {
     expect(p.text()).toEqual('2020-01-01');
   });
 
-  it('should render the movies vote average', () => {
-    const p = wrapper.find("[data-test='movie-vote-average-1']");
-    expect(p.text()).toEqual('IMDB Rating: 9.5');
-  });
-
   it('should render the movies poster', () => {
     const img = wrapper.find("[data-test='movie-poster-url-1']");
-    expect(img.props().src).toEqual('https://image.tmdb.org/t/p/w400/dom2esWWW8C9jS2v7dOhW48LwHh.jpg');
+    expect(img.props().src).toEqual('url');
   });
 
   it('should call onError when passed bad src', () => {
@@ -82,11 +77,6 @@ describe('Movies', () => {
     instance.handleImageUrlError(mockedEvent);
 
     expect(instance.handleImageUrlError).toHaveBeenCalledWith(mockedEvent);
-  });
-
-  it('should render the movies genre', () => {
-    const p = wrapper.find("[data-test='movie-genre-list-1']");
-    expect(p.text()).toEqual('Genres: Comedy');
   });
 
   it('should be able to filter the movies by genre', () => {
