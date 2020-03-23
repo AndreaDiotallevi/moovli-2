@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Router, Route } from 'react-router-dom';
+import { createBrowserHistory } from "history";
+
 import Home from './components/Home/Home';
 import Movies from './components/Movies/Movies';
 import fetchCountryCode from './api/fetchCountryCode'
@@ -7,12 +9,19 @@ import fetchMovies from './api/fetchMovies'
 import countryCodesJson from './utils/countryCodes.json';
 import fetchCoordinates from './api/fetchCoordinates';
 
+import './App.css';
+
+const history = createBrowserHistory();
+
 class App extends Component {
-  state = {
-    country: '',
-    movies: [],
-    infoWindowVisible: false,
-    onClickCoordinates: []
+  constructor(props) {
+    super(props);
+    this.state = {
+      country: '',
+      movies: [],
+      infoWindowVisible: false,
+      onClickCoordinates: [51.509865, -0.118092]
+    }
   }
 
   handleCountryChoice = async (t, map, coord) => {
@@ -31,21 +40,31 @@ class App extends Component {
               const movies = response.filter(movie => movie !== undefined);
               this.setState({movies});
               console.log('Movies: ', movies);
+              this.setState({ redirect: true });
+              history.push(`/${this.state.country.toLocaleLowerCase()}`);
             })
       .catch(error => {
         this.setState({infoWindowVisible: true});
       })
   }
 
-  handleBackToHome = () => {
-    this.setState({movies: []});
-  };
-
   render() {
     return (
       <div className='App'>
-        {this.state.movies.length === 0 && <Home onCountryChoice={this.handleCountryChoice} infoWindowVisible={this.state.infoWindowVisible} onClickCoordinates={this.state.onClickCoordinates}/>}
-        {this.state.movies.length !== 0 && <Movies movies={this.state.movies} country={this.state.country} onBackToHome={this.handleBackToHome}/>}
+        <Router history={history}>
+          <Route
+            exact path="/"
+            render={(routeProps) => (
+              <Home {...routeProps} country = {this.state.country} onCountryChoice={this.handleCountryChoice} infoWindowVisible={this.state.infoWindowVisible} onClickCoordinates={this.state.onClickCoordinates}/>
+            )}
+          />
+          <Route
+            path="/:country"
+            render={(routeProps) => (
+              <Movies {...routeProps} movies={this.state.movies} country={this.state.country}/>
+            )}
+          />
+        </Router>
       </div>
     );
   }
