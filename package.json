@@ -27,7 +27,8 @@
   "jest": {
     "coveragePathIgnorePatterns": [
       "src/api/",
-      "src/index.js"
+      "src/index.js",
+      "src/components/MapContainer/MapContainer.js"
     ]
   },
   "eslintConfig": {
