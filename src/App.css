@@ -11,37 +11,68 @@ button:focus {
   outline:0;
 }
 
-.App, #root, .home-container {
+.App, #root {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-/* Header */
+/* Home */
 
-.movies-component-header, .home-component-header {
+.home-component-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
-  width: 1010pxs;
-}
-
-.header-title-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  width: 1010px;
 }
 
 .home-header-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 90px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.header-title, .home-header-title {
+/* Movies */
+
+.movies-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.movies-component-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+}
+
+.header-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 1030px;
+  background-color: black;
+}
+
+.genre-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  width: 1030px;
+}
+
+.header-title {
   color: white;
   font-size: 18px;
   font-weight: 500;
@@ -57,29 +88,21 @@ button:focus {
   cursor: pointer;
 }
 
-.genre-buttons {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  width: 1010px;
-}
-
 .genre-buttons button, .home-header-description {
   background-color: black;
   color: white;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .genre-buttons button:hover {
   text-decoration: underline;
 }
 
-/* Movies */
-
 .movies-container {
   display: flex;
-  padding: 0 200px;
   margin-top: 60px;
+  width: 1030px;
 }
 
 ul {
@@ -93,14 +116,15 @@ ul {
 .movie {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  /* width: 30%; */
+  width: 310px;
   list-style-type: none;
   margin-bottom: 60px;
 }
 
 .movie-poster {
   height: 475px;
-  width: 318px;
+  width: 100%;
 }
 
 .movie-poster:hover {
@@ -147,4 +171,51 @@ ul {
   font-size: 13px;
   font-style: italic;
   opacity: 0.8;
+}
+
+@media (max-width: 1130px) {
+  .movies-container, .header-title-container, .genre-buttons, .home-header-description {
+    width: 670px;
+  }
+}
+
+@media (max-width: 770px) {
+  .movies-container, .header-title-container, .home-header-description {
+    width: 310px;
+  }
+
+  .genre-buttons {
+    width: 330px;
+  }
+
+  .header-title {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .genre-buttons {
+    flex-wrap: wrap;
+  }
+
+  button {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .movies-container, .header-title-container, .genre-buttons, .movie, .home-header-description {
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .movie-poster {
+    height: auto;
+  }
+
+  .back-home-link {
+    margin-left: 10px;
+  }
 }
