@@ -53,7 +53,7 @@ class Movies extends Component {
             {this.filterMovies().map((movie, index) => (
             <li className='movie' data-test={`movie-${movie.imdbID}`} key={index}>
               <div className='movie-image'>
-                <a href={`https://www.imdb.com/title/${movie.imdbID}/`}>
+                <a href={`https://www.imdb.com/title/${movie.imdbID}/`} target="_blank" rel="noopener noreferrer">
                   <img className='movie-poster' data-test={`movie-poster-url-${movie.imdbID}`} alt={`movie-poster-url-${movie.imdbID}`}
                     src={`${movie.posterURL}`} onError={this.handleImageUrlError}>
                   </img>
@@ -62,7 +62,7 @@ class Movies extends Component {
               <div className='movie-info'>
                 <div className='title-plot-container'>
                   <div className='movie-title-container'> 
-                    <a className='movie-title-anchor' href={`https://www.imdb.com/title/${movie.imdbID}/`}>
+                    <a className='movie-title-anchor' href={`https://www.imdb.com/title/${movie.imdbID}/`} target="_blank" rel="noopener noreferrer">
                       <h2 className='movie-title' data-test={`movie-title-${movie.imdbID}`}>
                         {movie.title.toUpperCase()}
                       </h2>
