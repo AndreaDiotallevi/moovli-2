@@ -2,7 +2,7 @@
 
 # The Movie Mapper
 
-[Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality)
+[Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
 
 ## Description
 
@@ -122,3 +122,7 @@ The application has four react components and each of them has a clear responsib
 ## Code Quality
 
 [ESLint](https://eslint.org/): tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+
+## Continuous Integration
+
+[CircleCI](https://circleci.com/): tool for automating the development process quickly, safely, and at scale.
