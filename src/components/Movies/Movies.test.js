@@ -9,7 +9,8 @@ const setUp = (Component, props = {}) => {
 
 describe('Movies', () => {
   let wrapper;
-  const movie1 = {
+
+  const movie = {
     imdbID: 1,
     title: 'title',
     plot: 'plot',
@@ -22,8 +23,8 @@ describe('Movies', () => {
   beforeEach(() => {
     wrapper = setUp(Movies, {
       country: 'UK',
-      movies: [movie1],
-      selectedGenre: null,
+      movies: [movie],
+      match: { params: { country: 'UK' } }
     });
   });
 
@@ -31,9 +32,9 @@ describe('Movies', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it("should render 'YOU ARE IN UK when clicked within UK", () => {
+  it("should render 'WELCOME TO UK when clicked within UK", () => {
     const h1 = wrapper.find("[data-test='movie-country-message']");
-    expect(h1.text()).toEqual('YOU ARE IN UK');
+    expect(h1.text()).toEqual('WELCOME TO UK');
   });
 
   it('should render the movies title', () => {
@@ -69,7 +70,7 @@ describe('Movies', () => {
     wrapper = setUp(Movies, {
       country: 'Poland',
       movies: [movieWithNoPoster],
-      selectedGenre: null,
+      match: { params: { country: 'UK' } }
     });
     const instance = wrapper.instance();
     jest.spyOn(instance, 'handleImageUrlError');

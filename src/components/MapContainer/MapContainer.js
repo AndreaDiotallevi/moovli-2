@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Map, InfoWindow, GoogleApiWrapper } from 'google-maps-react';
 
-class MapContainer extends Component {
+class MapContainer extends React.Component {
   render() {
     return (
       <div>
