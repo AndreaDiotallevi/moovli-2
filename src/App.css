@@ -101,6 +101,7 @@ button:focus {
 
 .movies-container {
   display: flex;
+  flex-direction: column;
   margin-top: 60px;
   width: 1030px;
 }
