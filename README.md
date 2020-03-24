@@ -2,13 +2,13 @@
 
 # The Movie Mapper
 
-[Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
+[Description](#description) | [Live Website](#live-website) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
 
 ## Description
 
 This is a single page application made with React that allows the user to click on a country from a map and see a suggestion of the best movies for that country. The user can then filter the movies by genre and expand the research by clicking on the movie poster, to be redirected to the IMDB movie page.
 
-## Live Demo
+## Live Website
 
 The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com/](https://www.themoviemapper.com/)
 
