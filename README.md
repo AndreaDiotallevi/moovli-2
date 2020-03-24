@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/AndreaDiotallevi/the-movie-mapper.svg?style=shield)](https://circleci.com/gh/AndreaDiotallevi/the-movie-mapper) [![Test Coverage](https://api.codeclimate.com/v1/badges/2e51fe5571066fd4380b/test_coverage)](https://codeclimate.com/github/AndreaDiotallevi/the-movie-mapper/test_coverage)
+
 # The Movie Mapper
 
 [Description](#description) | [Live Demo](#live-demo) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality)
