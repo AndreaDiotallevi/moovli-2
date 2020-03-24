@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import App from './App';
 
 jest.mock('./api/fetchCountryCode');
@@ -8,7 +8,7 @@ jest.mock('./api/fetchMovies');
 jest.mock('./api/fetchCoordinates');
 
 const setUp = (Component = {}) => {
-  const component = shallow(<Component />);
+  const component = mount(<Component />);
   return component;
 };
 
