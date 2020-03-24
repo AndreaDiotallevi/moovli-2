@@ -55,10 +55,6 @@ So that I can know what a movie is about,
 I'd like to see a description of each movie.
 
 As a user,
-So that I can know the level of a movie,
-I'd like to see the ratings for each movie.
-
-As a user,
 So that I can know how old is a movie,
 I'd like to see the release date for each movie
 
@@ -72,7 +68,7 @@ I'd like to be able to filter the available movies by genre.
 
 As a user,
 So that I can read reviews and learn more about a movie,
-I would like to see a link to the IMDB page for each movie.
+I would like a link to the IMDB page for each movie.
 ```
 
 ## Getting Started
