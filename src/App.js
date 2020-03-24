@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Redirect } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 
 import Home from './components/Home/Home';
@@ -52,6 +52,9 @@ class App extends Component {
     return (
       <div className='App'>
         <Router history={history}>
+          <Route exact path="/index.html">
+            {<Redirect to="/" />}
+          </Route>
           <Route
             exact path="/"
             render={(routeProps) => (
