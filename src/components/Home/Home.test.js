@@ -13,10 +13,10 @@ describe('Home', () => {
     expect(wrapper).toHaveLength(1);
   });
 
-  it("should render the title MOOVLI", () => {
+  it("should render the title THE MOVIE MAPPER", () => {
     const wrapper = setUp(Home, {});
     const h1 = wrapper.find("[data-test='app-title']");
-    expect(h1.text()).toEqual('MOOVLI');
+    expect(h1.text()).toEqual('THE MOVIE MAPPER');
   });
 
   it("should render the title description", () => {
