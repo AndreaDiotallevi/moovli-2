@@ -24,14 +24,17 @@ button:focus {
   flex-direction: column;
   align-items: center;
   background-color: black;
+  background-color: white;
 }
 
 .home-header-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 60px;
   color: white;
+  color: #4d6059;
+  color: black;
   font-size: 18px;
   font-weight: 500;
   margin-left: auto;
@@ -60,7 +63,7 @@ button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 60px;
   width: 1030px;
   background-color: black;
 }
@@ -89,9 +92,19 @@ button:focus {
   cursor: pointer;
 }
 
-.genre-buttons button, .home-header-description {
+.genre-buttons button {
   background-color: black;
   color: white;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.home-header-description {
+  background-color: black;
+  background-color: white;
+  color: white;
+  color: #4d6059;
+  color: black;
   padding-bottom: 5px;
   text-align: center;
 }
