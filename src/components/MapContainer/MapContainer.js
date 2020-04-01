@@ -7,11 +7,11 @@ class MapContainer extends React.Component {
       <div>
         <Map
           google={this.props.google}
-          zoom={4}
+          zoom={2.4}
           onClick={this.props.onCountryChoice}
           initialCenter={{
-            lat: 51.509865,
-            lng: -0.118092,
+            lat: 15,
+            lng: 0,
           }}
         >
           <InfoWindow
