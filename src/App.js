@@ -20,7 +20,7 @@ class App extends Component {
       country: '',
       movies: [],
       infoWindowVisible: false,
-      onClickCoordinates: [51.509865, -0.118092]
+      onClickCoordinates: [15, 0]
     }
   }
 
