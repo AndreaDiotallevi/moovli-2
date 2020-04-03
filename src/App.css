@@ -238,3 +238,7 @@ ul {
     margin-left: 10px;
   }
 }
+
+.gmnoprint, .gm-control-active {
+  display: none;
+}
