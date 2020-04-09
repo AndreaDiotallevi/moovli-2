@@ -33,14 +33,11 @@ class App extends Component {
         const countryCode = response.address.country_code;
         const country = countryCodesJson[countryCode];
         this.setState({country, infoWindowVisible: false});
-        // console.log('Country: ', country);
         return country;
           }).then(country => Promise.all(fetchMovies(country))
             ).then(response => {
               const movies = response.filter(movie => movie !== undefined);
               this.setState({movies});
-              // console.log('Movies: ', movies);
-              this.setState({ redirect: true });
               history.push(`/${this.state.country.toLocaleLowerCase()}`);
             })
       .catch(error => {
