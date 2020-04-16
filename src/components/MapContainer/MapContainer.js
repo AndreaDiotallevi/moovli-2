@@ -1,12 +1,12 @@
-import React from 'react';
-import { Map, InfoWindow, GoogleApiWrapper } from 'google-maps-react';
+import React from "react";
+import { Map, InfoWindow, GoogleApiWrapper } from "google-maps-react";
 
 class MapContainer extends React.Component {
-   _mapLoaded(mapProps, map) {
-      map.setOptions({
-         styles: mapStyle
-      })
-   }
+  _mapLoaded(mapProps, map) {
+    map.setOptions({
+      styles: mapStyle,
+    });
+  }
 
   render() {
     return (
@@ -21,16 +21,17 @@ class MapContainer extends React.Component {
             lng: 0,
           }}
           onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
-          >
+        >
           <InfoWindow
-            position = {{
-              lat: (this.props.onClickCoordinates[0]),
-              lng: (this.props.onClickCoordinates[1]),
+            position={{
+              lat: this.props.onClickCoordinates[0],
+              lng: this.props.onClickCoordinates[1],
             }}
-            visible={this.props.infoWindowVisible}>
-              <div>
-                <h4>There are no movies for this country</h4>
-              </div>
+            visible={this.props.infoWindowVisible}
+          >
+            <div>
+              <h4>There are no movies for this country</h4>
+            </div>
           </InfoWindow>
         </Map>
       </div>
@@ -44,75 +45,75 @@ export default GoogleApiWrapper({
 
 const mapStyle = [
   {
-    "featureType": "all",
-    "elementType": "all",
-    "stylers": [
+    featureType: "all",
+    elementType: "all",
+    stylers: [
       {
-        "visibility": "off"
-      }
-    ]
+        visibility: "off",
+      },
+    ],
   },
   {
-    "featureType": "all",
-    "elementType": "labels.text.fill",
-    "stylers": [
+    featureType: "all",
+    elementType: "labels.text.fill",
+    stylers: [
       {
-        "saturation": 100
+        saturation: 100,
       },
       {
-        "color": "#000000"
+        color: "#000000",
       },
       {
-        "lightness": 100
+        lightness: 100,
       },
       {
-        "visibility": "on"
+        visibility: "on",
       },
       {
-        "font-family": "Work Sans"
-      }
-    ]
+        "font-family": "Work Sans",
+      },
+    ],
   },
   {
-    "featureType": "administrative.country",
-    "elementType": "geometry.stroke",
-    "stylers": [
+    featureType: "administrative.country",
+    elementType: "geometry.stroke",
+    stylers: [
       {
-        "visibility": "on"
+        visibility: "on",
       },
       {
-        "color": "#FFFFFF"
+        color: "#FFFFFF",
       },
       {
-        "lightness": 100
+        lightness: 100,
       },
       {
-        "weight": 0.35
-      }
-    ]
+        weight: 0.35,
+      },
+    ],
   },
   {
-    "featureType": "landscape.natural",
-    "elementType": "geometry.fill",
-    "stylers": [
+    featureType: "landscape.natural",
+    elementType: "geometry.fill",
+    stylers: [
       {
-        "visibility": "on"
+        visibility: "on",
       },
       {
-        "color": "#4d6059"
-      }
-    ]
+        color: "#4d6059",
+      },
+    ],
   },
   {
-    "featureType": "water",
-    "elementType": "all",
-    "stylers": [
+    featureType: "water",
+    elementType: "all",
+    stylers: [
       {
-        "color": "#38444C"
+        color: "#38444C",
       },
       {
-        "visibility": "on"
-      }
-    ]
-  }
-]
+        visibility: "on",
+      },
+    ],
+  },
+];

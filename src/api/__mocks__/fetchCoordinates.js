@@ -4,6 +4,6 @@ const fetchCoordinates = (t, map, coord) => {
   } else if (coord == "Benin coordinates") {
     return ["BeninLat", "BeninLng"];
   }
-}
+};
 
 export default fetchCoordinates;

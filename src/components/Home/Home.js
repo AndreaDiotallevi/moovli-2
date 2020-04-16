@@ -1,11 +1,18 @@
-import React from 'react';
-import MapContainer from '../MapContainer/MapContainer';
+import React from "react";
+import MapContainer from "../MapContainer/MapContainer";
 
 const Home = (props) => (
   <div className="home-component" data-test="app">
     <div className="home-component-header">
-      <h1 className="home-header-title" data-test="app-title">THE MOVIE MAPPER</h1>
-      <p className='home-header-description' data-test='home-header-description'>Click on a country and find the best movies from that country!</p>
+      <h1 className="home-header-title" data-test="app-title">
+        THE MOVIE MAPPER
+      </h1>
+      <p
+        className="home-header-description"
+        data-test="home-header-description"
+      >
+        Click on a country and find the best movies from that country!
+      </p>
     </div>
     <div className="map-container">
       <MapContainer

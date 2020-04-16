@@ -25,10 +25,7 @@
     "Days of Glory",
     "Living In Paradise"
   ],
-  "Angola": [
-    "Sambizanga",
-    "Hollow City"
-  ],
+  "Angola": ["Sambizanga", "Hollow City"],
   "Argentina": [
     "The Motorcycle Diaries",
     "The Islanders",
@@ -147,9 +144,7 @@
     "The Inheritors",
     "Blind Spot. Hitler's Secretary"
   ],
-  "Azerbaijan": [
-    "The Scoundrel"
-  ],
+  "Azerbaijan": ["The Scoundrel"],
   "Bosnia and Herzegovina": [
     "No Man's Land",
     "Walter Defends Sarajevo",
@@ -163,9 +158,7 @@
     "location de voiture casablanca",
     "location de voiture casablanca"
   ],
-  "Bahrain": [
-    "A Bahraini Tale"
-  ],
+  "Bahrain": ["A Bahraini Tale"],
   "Bangladesh": [
     "Taken From Life",
     "Song of Freedom",
@@ -212,19 +205,14 @@
     "With Friends Like These",
     "A Town Called Panic Panique au village"
   ],
-  "Bhutan": [
-    "Travellers and Magicians",
-    "The Cup"
-  ],
+  "Bhutan": ["Travellers and Magicians", "The Cup"],
   "Bolivia": [
     "And So It Is",
     "The Night of San Juan",
     "The Cartagena Brothers",
     "My Friend"
   ],
-  "Bostwana": [
-    "The Gods Must Be Crazy"
-  ],
+  "Bostwana": ["The Gods Must Be Crazy"],
   "Brazil": [
     "City of God",
     "Keeper of Promises",
@@ -319,11 +307,7 @@
     "S-21: The Khmer Rouge Killing Machine",
     "Rice People (Neak sre)"
   ],
-  "Cameroon": [
-    "Chocolat",
-    "Man on the Bottom",
-    "Sisters in Law"
-  ],
+  "Cameroon": ["Chocolat", "Man on the Bottom", "Sisters in Law"],
   "Canada": [
     "Juno",
     "Eastern Promises",
@@ -373,12 +357,7 @@
     "Maelstr\u00f6m",
     "Archangel"
   ],
-  "Chad": [
-    "DP75: Tartina City",
-    "Dry Season",
-    "Our Father",
-    "A Screaming Man"
-  ],
+  "Chad": ["DP75: Tartina City", "Dry Season", "Our Father", "A Screaming Man"],
   "Chile": [
     "The Battle of Chile: Part 1,2,3",
     "The Holy Mountain",
@@ -585,11 +564,7 @@
     "Guaguasi",
     "April: The trench of honor"
   ],
-  "Ecuador": [
-    "Chronicles",
-    "Rodents",
-    "How Much Further"
-  ],
+  "Ecuador": ["Chronicles", "Rodents", "How Much Further"],
   "Egypt": [
     "The Nightingale's Prayer",
     "The Flirtation of Girls",
@@ -920,11 +895,7 @@
     "Rocks",
     "The Baader Meinhof Complex"
   ],
-  "Ghana": [
-    "Mummy's Daughter",
-    "Soul to Soul",
-    "Sankofa"
-  ],
+  "Ghana": ["Mummy's Daughter", "Soul to Soul", "Sankofa"],
   "Greece": [
     "The Counterfeit Coin",
     "Tis kakomoiras",
@@ -956,21 +927,10 @@
     "The Weeping Meadow",
     "Dogtooth"
   ],
-  "Guam": [
-    "What Sebastian Dreamt",
-    "The Railroad All Stars"
-  ],
-  "Guinea": [
-    "Denko",
-    "I.T.  Immatriculation temporaire"
-  ],
-  "Guinea Bissau": [
-    "Death Denied",
-    "Po di Sangui"
-  ],
-  "Guyana": [
-    "Guiana 1838"
-  ],
+  "Guam": ["What Sebastian Dreamt", "The Railroad All Stars"],
+  "Guinea": ["Denko", "I.T.  Immatriculation temporaire"],
+  "Guinea Bissau": ["Death Denied", "Po di Sangui"],
+  "Guyana": ["Guiana 1838"],
   "Haiti": [
     "Lumumba",
     "Profit & Nothing But! ...",
@@ -1287,11 +1247,7 @@
     "Fellini's Casanova ",
     "Dear Diary"
   ],
-  "Jamaica": [
-    "The Harder They Come",
-    "Rockers ",
-    "Countryman"
-  ],
+  "Jamaica": ["The Harder They Come", "Rockers ", "Countryman"],
   "Japan": [
     "The Seven Samurai ",
     "Ran",
@@ -1319,14 +1275,8 @@
     "Sansho the Bailiff",
     " I Was Born, But\u2026"
   ],
-  "Jordan": [
-    "Captain Abu Raed"
-  ],
-  "Kazakhstan": [
-    "The Fall of Otrar",
-    "The Gift to Stalin",
-    "Tulpan"
-  ],
+  "Jordan": ["Captain Abu Raed"],
+  "Kazakhstan": ["The Fall of Otrar", "The Gift to Stalin", "Tulpan"],
   "Kenya": [
     "The Oath",
     "Mo and Me",
@@ -1334,16 +1284,8 @@
     "Chokora",
     "I Want to Be a Pilot"
   ],
-  "Kuwait": [
-    "Losing Ahmad",
-    "Cruel Sea",
-    "Just Like You Imagined "
-  ],
-  "Kyrgyzstan": [
-    "Tengri",
-    "The Adopted Son",
-    "Pure Coolness "
-  ],
+  "Kuwait": ["Losing Ahmad", "Cruel Sea", "Just Like You Imagined "],
+  "Kyrgyzstan": ["Tengri", "The Adopted Son", "Pure Coolness "],
   "Latvia": [
     "Ten Minutes Older",
     "Emila nedarbi",
@@ -1365,11 +1307,7 @@
     "Under the Bombs",
     "After Shave"
   ],
-  "Libya": [
-    "Mohammad: Messenger of God",
-    "Lion of the Desert",
-    "Message"
-  ],
+  "Libya": ["Mohammad: Messenger of God", "Lion of the Desert", "Message"],
   "Lithuania": [
     "Devil's Bride",
     "Tadas Blinda",
@@ -1407,19 +1345,9 @@
     "Chinese Eye",
     "I Don't Want to Sleep Alone"
   ],
-  "Mali": [
-    "Brightness ",
-    "The Wind",
-    "Faro: Goddess of the Waters"
-  ],
-  "Martinique": [
-    "Sugar Cane Alley"
-  ],
-  "Mauritania": [
-    "Oh, Sun",
-    "Life on Earth",
-    "Waiting for Happiness"
-  ],
+  "Mali": ["Brightness ", "The Wind", "Faro: Goddess of the Waters"],
+  "Martinique": ["Sugar Cane Alley"],
+  "Mauritania": ["Oh, Sun", "Life on Earth", "Waiting for Happiness"],
   "Mexico": [
     "Pan's Labyrinth",
     "Children of Men",
@@ -1462,10 +1390,7 @@
     "Ali Zaoua: Prince of the Streets",
     "Grand Voyage"
   ],
-  "Nepal": [
-    "Basain",
-    "Himalaya"
-  ],
+  "Nepal": ["Basain", "Himalaya"],
   "Netherlands": [
     "Black Book",
     "The Vanishing ",
@@ -1523,20 +1448,9 @@
     "Rain",
     "Boy"
   ],
-  "Niger": [
-    "Return of an Adventurer",
-    "Cocka-doodle-doo Mr. Chicken"
-  ],
-  "Nigeria": [
-    "Ezra",
-    "Ije",
-    "Osuofia in London",
-    "Legacy"
-  ],
-  "North Korea": [
-    "Repatriation",
-    "Hero"
-  ],
+  "Niger": ["Return of an Adventurer", "Cocka-doodle-doo Mr. Chicken"],
+  "Nigeria": ["Ezra", "Ije", "Osuofia in London", "Legacy"],
+  "North Korea": ["Repatriation", "Hero"],
   "Norway": [
     "Pinchcliffe Grand Prix",
     "Little Freddy and his Fiddle",
@@ -1595,13 +1509,8 @@
     "Divine Intervention",
     "Tears of Gaza"
   ],
-  "Panama": [
-    "The Wind and the Water",
-    "One Dollar"
-  ],
-  "Papua New Guinea": [
-    "Black Harvest"
-  ],
+  "Panama": ["The Wind and the Water", "One Dollar"],
+  "Papua New Guinea": ["Black Harvest"],
   "Peru": [
     "The Green Wall",
     "The City and the Dogs",
@@ -1774,14 +1683,8 @@
     "\"Come and See\"",
     "\"The Thief\""
   ],
-  "Rwanda": [
-    "Keepers of Memory",
-    "Munyurangabo"
-  ],
-  "Saudi Arabia": [
-    "Cinema 500 km",
-    "Aayesh"
-  ],
+  "Rwanda": ["Keepers of Memory", "Munyurangabo"],
+  "Saudi Arabia": ["Cinema 500 km", "Aayesh"],
   "Senegal": [
     "Black Girl",
     "The Money Order",
@@ -2031,11 +1934,7 @@
     "Rebels of the Neon God",
     "Vive L'Amour"
   ],
-  "Tajikistan": [
-    "Luna Papa",
-    "The Silence",
-    "Kosh ba kosh"
-  ],
+  "Tajikistan": ["Luna Papa", "The Silence", "Kosh ba kosh"],
   "Tanzania": [
     "People of the Forest: The Chimps of Gombe",
     "Maangamizi: The Ancient One"
@@ -2060,11 +1959,7 @@
     "Tropical Malady",
     "Uncle Boonmee Who Can Recall His Past Lives"
   ],
-  "Trinidad tobago": [
-    "Bim",
-    "The Right and the Wrong",
-    "A Winter Tale"
-  ],
+  "Trinidad tobago": ["Bim", "The Right and the Wrong", "A Winter Tale"],
   "Tunisia": [
     "The Magic",
     "Layla",
@@ -2164,10 +2059,7 @@
     "G\u00fcne\u015fe Yolculuk",
     "Yoksul"
   ],
-  "U.a.e.": [
-    "Neighbourhood",
-    "Mirrors of Silence"
-  ],
+  "U.a.e.": ["Neighbourhood", "Mirrors of Silence"],
   "Ukraine": [
     "Ballad of a Soldier",
     "Earth",
@@ -2241,9 +2133,7 @@
     "25 Watts",
     "Panic Attack!"
   ],
-  "Uzbekistan": [
-    "The Desert of Forbidden Art"
-  ],
+  "Uzbekistan": ["The Desert of Forbidden Art"],
   "Venezuela": [
     "Araya",
     "The Revolution Will Not Be Televised",

@@ -1,5 +1,5 @@
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
   font-size: 15px;
   margin: 0;
@@ -8,10 +8,11 @@
 }
 
 button:focus {
-  outline:0;
+  outline: 0;
 }
 
-.App, #root {
+.App,
+#root {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -166,7 +167,7 @@ ul {
 .movie-title-anchor:hover {
   text-decoration: underline;
   text-decoration-color: black;
-  transition: 0.3s;;
+  transition: 0.3s;
 }
 
 .movie-plot {
@@ -186,20 +187,26 @@ ul {
   opacity: 0.8;
 }
 
-.movie-vote-average, .average-rating-title {
+.movie-vote-average,
+.average-rating-title {
   font-size: 13px;
   font-style: italic;
   opacity: 0.8;
 }
 
 @media (max-width: 1130px) {
-  .movies-container, .header-title-container, .genre-buttons, .home-header-description {
+  .movies-container,
+  .header-title-container,
+  .genre-buttons,
+  .home-header-description {
     width: 670px;
   }
 }
 
 @media (max-width: 770px) {
-  .movies-container, .header-title-container, .home-header-description {
+  .movies-container,
+  .header-title-container,
+  .home-header-description {
     width: 310px;
   }
 
@@ -224,7 +231,11 @@ ul {
 }
 
 @media (max-width: 350px) {
-  .movies-container, .header-title-container, .genre-buttons, .movie, .home-header-description {
+  .movies-container,
+  .header-title-container,
+  .genre-buttons,
+  .movie,
+  .home-header-description {
     width: auto;
     margin-right: 10px;
     margin-left: 10px;
@@ -239,6 +250,7 @@ ul {
   }
 }
 
-.gmnoprint, .gm-control-active {
+.gmnoprint,
+.gm-control-active {
   display: none;
 }
