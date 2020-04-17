@@ -1,7 +1,7 @@
 import React from "react";
 import MapContainer from "../MapContainer/MapContainer";
 
-const Home = (props) => (
+const Home = ({ onCountryChoice, infoWindowVisible, onClickCoordinates }) => (
   <div className="home-component" data-test="app">
     <div className="home-component-header">
       <h1 className="home-header-title" data-test="app-title">
@@ -16,9 +16,9 @@ const Home = (props) => (
     </div>
     <div className="map-container">
       <MapContainer
-        onCountryChoice={props.onCountryChoice}
-        infoWindowVisible={props.infoWindowVisible}
-        onClickCoordinates={props.onClickCoordinates}
+        onCountryChoice={onCountryChoice}
+        infoWindowVisible={infoWindowVisible}
+        onClickCoordinates={onClickCoordinates}
       />
     </div>
   </div>
