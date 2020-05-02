@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import MapContainer from "./MapContainer";
-import { findByTestAttr, storeFactory } from "../../../test/testUtils";
+import { storeFactory } from "../../../test/testUtils";
 
 const setup = (initialState = {}, initialProps = {}) => {
   const store = storeFactory(initialState);
