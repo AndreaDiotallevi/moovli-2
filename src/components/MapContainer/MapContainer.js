@@ -1,119 +1,58 @@
 import React from "react";
-import { Map, InfoWindow, GoogleApiWrapper } from "google-maps-react";
+import { Map, GoogleApiWrapper, InfoWindow } from "google-maps-react";
+import { connect } from "react-redux";
 
-class MapContainer extends React.Component {
-  _mapLoaded(mapProps, map) {
+import { fetchCoordinatesCountryCodeAndCountry } from "../../actions";
+import mapStyles from "../../utils/mapStyles";
+
+const MapContainer = (props) => {
+  const _mapLoaded = (mapProps, map) => {
     map.setOptions({
-      styles: mapStyle,
+      styles: mapStyles,
     });
-  }
+  };
 
-  render() {
-    return (
-      <div>
-        <Map
-          google={this.props.google}
-          style={this.props.mapStyles}
-          zoom={2.4}
-          onClick={this.props.onCountryChoice}
-          initialCenter={{
-            lat: 15,
-            lng: 0,
+  return (
+    <div>
+      <Map
+        google={props.google}
+        zoom={2.4}
+        onClick={(t, map, coord) =>
+          props.fetchCoordinatesCountryCodeAndCountry(t, map, coord)
+        }
+        initialCenter={{
+          lat: 15,
+          lng: 0,
+        }}
+        onReady={(mapProps, map) => _mapLoaded(mapProps, map)}
+      >
+        <InfoWindow
+          position={{
+            lat: props.coordinates[0],
+            lng: props.coordinates[1],
           }}
-          onReady={(mapProps, map) => this._mapLoaded(mapProps, map)}
+          visible={props.infoWindowOn}
         >
-          <InfoWindow
-            position={{
-              lat: this.props.onClickCoordinates[0],
-              lng: this.props.onClickCoordinates[1],
-            }}
-            visible={this.props.infoWindowVisible}
-          >
-            <div>
-              <h4>There are no movies for this country</h4>
-            </div>
-          </InfoWindow>
-        </Map>
-      </div>
-    );
-  }
-}
+          <div>
+            <p>No Movies Under The Sea</p>
+          </div>
+        </InfoWindow>
+      </Map>
+    </div>
+  );
+};
 
-export default GoogleApiWrapper({
+const mapStateToProps = (state) => {
+  return {
+    coordinates: state.coordinates,
+    infoWindowOn: state.infoWindowOn,
+  };
+};
+
+const mapDispatchToProps = { fetchCoordinatesCountryCodeAndCountry };
+
+const wrappedMap = GoogleApiWrapper({
   apiKey: process.env.REACT_APP_MAPS_API,
 })(MapContainer);
 
-const mapStyle = [
-  {
-    featureType: "all",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "all",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        saturation: 100,
-      },
-      {
-        color: "#000000",
-      },
-      {
-        lightness: 100,
-      },
-      {
-        visibility: "on",
-      },
-      {
-        "font-family": "Work Sans",
-      },
-    ],
-  },
-  {
-    featureType: "administrative.country",
-    elementType: "geometry.stroke",
-    stylers: [
-      {
-        visibility: "on",
-      },
-      {
-        color: "#FFFFFF",
-      },
-      {
-        lightness: 100,
-      },
-      {
-        weight: 0.35,
-      },
-    ],
-  },
-  {
-    featureType: "landscape.natural",
-    elementType: "geometry.fill",
-    stylers: [
-      {
-        visibility: "on",
-      },
-      {
-        color: "#4d6059",
-      },
-    ],
-  },
-  {
-    featureType: "water",
-    elementType: "all",
-    stylers: [
-      {
-        color: "#38444C",
-      },
-      {
-        visibility: "on",
-      },
-    ],
-  },
-];
+export default connect(mapStateToProps, mapDispatchToProps)(wrappedMap);
