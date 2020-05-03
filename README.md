@@ -21,14 +21,16 @@ This was a group project during the final two weeks at [Makers Academy](https://
 * [Andrea Diotallevi](https://github.com/AndreaDiotallevi)
 * [Daniel Martinez-Gatell](https://github.com/denriquem)
 
-After the course, I refined the application by implementing asynchronous tests, re-designing the styling and deploying it to AWS with a custom domain.
+After the course, I re-designed the application by using Redux for state management, implementing asynchronous tests, re-designing the styling and deploying it to AWS with a custom domain.
 
 ## Challenges and Goals
 
 * Build a front-end web application that people would use and have fun playing around with.
 * Use and understand React design patterns and its testing frameworks Jest and Enzyme.
+* Use Redux for state management
+* Test Redux actions and reducers with integration tests
 * Handle nested asynchronous requests from multiple APIs within a React application.
-* Deploy a front-end app to Heroku, given API restrictions for production websites.
+* Deploy a front-end app to AWS, given API restrictions for production websites.
 * Use Python to scrape data from the internet and save it into a usable JSON format.
 
 ## User Stories
@@ -91,16 +93,21 @@ The application has four react components and each of them has a clear responsib
 
   - ```App```: application main container.
   
-  - ```Home```: responsible for showing the homepage title and containing the MapContainer component.
+  - ```Header```: responsible for showing the correct header according to the pathname.
+  
+  - ```SubHeader```: responsible for showing the correct sub-header according to the pathname.
   
   - ```MapContainer```: responsible for showing the map and managing the info window.
   
-  - ```Movies```: responsible for listing the best movies for each country and filtering them by genre.
+  - ```MovieList```: responsible for listing the best movies for each country and filtering them by genre.
+  
+  - ```MovieDetail```: responsible for showing the movie info on the page.
 
 ## Technologies Used
 
 - Main technologies:
   * [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
+  * [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
   * [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
   * [Python](https://www.python.org/): a general purpose programming language we used for web scraping (see [this](https://github.com/AndreaDiotallevi/movie-titles-scraper) helper repository).
   * [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): the flexible box layout module makes it easier to design flexible responsive layout structure without using float or positioning.
