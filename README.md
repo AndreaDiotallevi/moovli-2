@@ -12,10 +12,9 @@ This is a single page application made with React that allows the user to click 
 
 The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com/](https://www.themoviemapper.com/)
 
-<p align="center" display="flex">
-  <img src="./src/assets/the-movie-mapper-home.png" alt="home" width="50%"></img>
-  <img src="./src/assets/the-movie-mapper-movies.png" alt="movies" width="50%"></img>
-</p>
+Home Page             |  Movies Page
+:-------------------------:|:-------------------------:
+![](./src/assets/the-movie-mapper-home.png)  |  ![](./src/assets/the-movie-mapper-movies.png)
 
 ## The Team
 
