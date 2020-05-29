@@ -10,7 +10,7 @@ This is a single page application made with React that allows the user to click 
 
 ## Live Website
 
-The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com/](https://www.themoviemapper.com/)
+The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com](https://www.themoviemapper.com/).
 
 Home Page             |  Movies Page
 :-------------------------:|:-------------------------:
