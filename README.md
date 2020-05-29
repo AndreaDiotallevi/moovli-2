@@ -89,6 +89,10 @@ Start the local server with ```npm start```
 
 ## Design Approach
 
+<p align="center">
+  <img src="./src/assets/react-components-diagram.svg" alt="react-components-diagram"></img>
+</p>
+
 The application has four react components and each of them has a clear responsibility:
 
   - ```App```: application main container.
