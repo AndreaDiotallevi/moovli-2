@@ -12,26 +12,31 @@ This is a single page application made with React that allows the user to click 
 
 The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com/](https://www.themoviemapper.com/)
 
+<p align="center" display="flex">
+  <img src="./src/assets/the-movie-mapper-home" alt="home"></img>
+  <img src="./src/assets/the-movie-mapper-movies" alt="movies"></img>
+</p>
+
 ## The Team
 
 This was a group project during the final two weeks at [Makers Academy](https://makers.tech/). The team was composed by:
 
-* [Tuan Nguyen](https://github.com/TuanNguyen1010)
-* [Hisham Bokhari](https://github.com/hishambokhari)
-* [Andrea Diotallevi](https://github.com/AndreaDiotallevi)
-* [Daniel Martinez-Gatell](https://github.com/denriquem)
+- [Tuan Nguyen](https://github.com/TuanNguyen1010)
+- [Hisham Bokhari](https://github.com/hishambokhari)
+- [Andrea Diotallevi](https://github.com/AndreaDiotallevi)
+- [Daniel Martinez-Gatell](https://github.com/denriquem)
 
 After the course, I re-designed the application by using Redux for state management, implementing asynchronous tests, re-designing the styling and deploying it to AWS with a custom domain.
 
 ## Challenges and Goals
 
-* Build a front-end web application that people would use and have fun playing around with.
-* Use and understand React design patterns and its testing frameworks Jest and Enzyme.
-* Use Redux for state management
-* Test Redux actions and reducers with integration tests
-* Handle nested asynchronous requests from multiple APIs within a React application.
-* Deploy a front-end app to AWS, given API restrictions for production websites.
-* Use Python to scrape data from the internet and save it into a usable JSON format.
+- Build a front-end web application that people would use and have fun playing around with.
+- Use and understand React design patterns and its testing frameworks Jest and Enzyme.
+- Use Redux for state management
+- Test Redux actions and reducers with integration tests
+- Handle nested asynchronous requests from multiple APIs within a React application.
+- Deploy a front-end app to AWS, given API restrictions for production websites.
+- Use Python to scrape data from the internet and save it into a usable JSON format.
 
 ## User Stories
 
@@ -75,17 +80,17 @@ I would like a link to the IMDB page for each movie.
 
 ## Getting Started
 
-* Clone this repository and change into it
-* Make sure you have [Node.js](https://nodejs.org/en/download/) installed
-* Install all the dependencies with ```npm install```
+- Clone this repository and change into it
+- Make sure you have [Node.js](https://nodejs.org/en/download/) installed
+- Install all the dependencies with `npm install`
 
 ## How to Run the Tests
 
-To run all the tests type ```npm test```
+To run all the tests type `npm test`
 
 ## How to Run the App
 
-Start the local server with ```npm start```
+Start the local server with `npm start`
 
 ## Design Approach
 
@@ -95,36 +100,37 @@ Start the local server with ```npm start```
 
 The application has four react components and each of them has a clear responsibility:
 
-  - ```App```: application main container.
-  
-  - ```Header```: responsible for showing the correct header according to the pathname.
-  
-  - ```SubHeader```: responsible for showing the correct sub-header according to the pathname.
-  
-  - ```MapContainer```: responsible for showing the map and managing the info window.
-  
-  - ```MovieList```: responsible for listing the best movies for each country and filtering them by genre.
-  
-  - ```MovieDetail```: responsible for showing the movie info on the page.
+- `App`: application main container.
+
+- `Header`: responsible for showing the correct header according to the pathname.
+
+- `SubHeader`: responsible for showing the correct sub-header according to the pathname.
+
+- `MapContainer`: responsible for showing the map and managing the info window.
+
+- `MovieList`: responsible for listing the best movies for each country and filtering them by genre.
+
+- `MovieDetail`: responsible for showing the movie info on the page.
 
 ## Technologies Used
 
 - Main technologies:
-  * [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
-  * [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
-  * [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
-  * [Python](https://www.python.org/): a general purpose programming language we used for web scraping (see [this](https://github.com/AndreaDiotallevi/movie-titles-scraper) helper repository).
-  * [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): the flexible box layout module makes it easier to design flexible responsive layout structure without using float or positioning.
-  
+
+  - [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
+  - [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
+  - [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
+  - [Python](https://www.python.org/): a general purpose programming language we used for web scraping (see [this](https://github.com/AndreaDiotallevi/movie-titles-scraper) helper repository).
+  - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): the flexible box layout module makes it easier to design flexible responsive layout structure without using float or positioning.
+
 - External APIs:
-  * [Google Maps Api](https://developers.google.com/maps/documentation): web service we used to show the map on the page and get geographical coordinates from the user click.
-  * [LocationIQ API](https://locationiq.com/docs): web service we used to get the country information from geographical coordinates.
-  * [OMDb API](http://www.omdbapi.com/): web service we used to get each movie information by title.
-  
-  
+
+  - [Google Maps Api](https://developers.google.com/maps/documentation): web service we used to show the map on the page and get geographical coordinates from the user click.
+  - [LocationIQ API](https://locationiq.com/docs): web service we used to get the country information from geographical coordinates.
+  - [OMDb API](http://www.omdbapi.com/): web service we used to get each movie information by title.
+
 - Testing frameworks:
-  * [Jest](https://jestjs.io/): a JavaScript Testing Framework with a focus on simplicity.
-  * [Enzyme](https://www.npmjs.com/package/enzyme): a JavaScript Testing utility for React that makes it easier to test the React Components' output.
+  - [Jest](https://jestjs.io/): a JavaScript Testing Framework with a focus on simplicity.
+  - [Enzyme](https://www.npmjs.com/package/enzyme): a JavaScript Testing utility for React that makes it easier to test the React Components' output.
 
 ## Code Quality
 
