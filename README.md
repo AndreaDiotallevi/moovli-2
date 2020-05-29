@@ -13,8 +13,8 @@ This is a single page application made with React that allows the user to click 
 The application is deployed with AWS Amplify Console at this custom domain: [https://www.themoviemapper.com/](https://www.themoviemapper.com/)
 
 <p align="center" display="flex">
-  <img src="./src/assets/the-movie-mapper-home" alt="home"></img>
-  <img src="./src/assets/the-movie-mapper-movies" alt="movies"></img>
+  <img src="./src/assets/the-movie-mapper-home.png" alt="home"></img>
+  <img src="./src/assets/the-movie-mapper-movies.png" alt="movies"></img>
 </p>
 
 ## The Team
