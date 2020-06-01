@@ -2,7 +2,7 @@
 
 # The Movie Mapper
 
-[Description](#description) | [Live Website](#live-website) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Technologies Used](#technologies-used) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
+[Description](#description) | [Live Website](#live-website) | [Technologies Used](#technologies-used) | [The Team](#the-team) | [Challenges and Goals](#challenges-and-goals) | [Features](#features) | [User Stories](#user-stories) | [Getting Started](#getting-started) | [How to Run the Tests](#how-to-run-the-tests) | [How to Run the App](#how-to-run-the-app) | [Design Approach](#design-approach) | [Code Quality](#code-quality) | [Continuous Integration](#continuous-integration)
 
 ## Description
 
@@ -15,6 +15,26 @@ The application is deployed with AWS Amplify Console at this custom domain: [htt
 Home Page             |  Movies Page
 :-------------------------:|:-------------------------:
 ![](./src/assets/the-movie-mapper-home.png)  |  ![](./src/assets/the-movie-mapper-movies.png)
+
+## Technologies Used
+
+- Main technologies:
+
+  - [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
+  - [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
+  - [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
+  - [Python](https://www.python.org/): a general purpose programming language we used for web scraping (see [this](https://github.com/AndreaDiotallevi/movie-titles-scraper) helper repository).
+  - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): the flexible box layout module makes it easier to design flexible responsive layout structure without using float or positioning.
+
+- External APIs:
+
+  - [Google Maps Api](https://developers.google.com/maps/documentation): web service we used to show the map on the page and get geographical coordinates from the user click.
+  - [LocationIQ API](https://locationiq.com/docs): web service we used to get the country information from geographical coordinates.
+  - [OMDb API](http://www.omdbapi.com/): web service we used to get each movie information by title.
+
+- Testing frameworks:
+  - [Jest](https://jestjs.io/): a JavaScript Testing Framework with a focus on simplicity.
+  - [Enzyme](https://www.npmjs.com/package/enzyme): a JavaScript Testing utility for React that makes it easier to test the React Components' output.
 
 ## The Team
 
@@ -110,26 +130,6 @@ The application has four react components and each of them has a clear responsib
 - `MovieList`: responsible for listing the best movies for each country and filtering them by genre.
 
 - `MovieDetail`: responsible for showing the movie info on the page.
-
-## Technologies Used
-
-- Main technologies:
-
-  - [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
-  - [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
-  - [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
-  - [Python](https://www.python.org/): a general purpose programming language we used for web scraping (see [this](https://github.com/AndreaDiotallevi/movie-titles-scraper) helper repository).
-  - [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox): the flexible box layout module makes it easier to design flexible responsive layout structure without using float or positioning.
-
-- External APIs:
-
-  - [Google Maps Api](https://developers.google.com/maps/documentation): web service we used to show the map on the page and get geographical coordinates from the user click.
-  - [LocationIQ API](https://locationiq.com/docs): web service we used to get the country information from geographical coordinates.
-  - [OMDb API](http://www.omdbapi.com/): web service we used to get each movie information by title.
-
-- Testing frameworks:
-  - [Jest](https://jestjs.io/): a JavaScript Testing Framework with a focus on simplicity.
-  - [Enzyme](https://www.npmjs.com/package/enzyme): a JavaScript Testing utility for React that makes it easier to test the React Components' output.
 
 ## Code Quality
 
