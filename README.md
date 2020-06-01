@@ -20,6 +20,7 @@ Home Page             |  Movies Page
 
 - Main technologies:
 
+  - [Node](https://nodejs.org/en/): a JavaScript runtime built on Chrome's V8 JavaScript engine I used to write JavaScript code on the server side.
   - [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
   - [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
   - [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
