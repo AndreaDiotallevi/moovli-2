@@ -20,7 +20,7 @@ Home Page             |  Movies Page
 
 - Main technologies:
 
-  - [Node](https://nodejs.org/en/): a JavaScript runtime built on Chrome's V8 JavaScript engine I used to write JavaScript code on the server side.
+  - [Node](https://nodejs.org/en/): a JavaScript runtime built on Chrome's V8 JavaScript engine.
   - [React](https://reactjs.org/): a JavaScript library we used to build the user interface and gather data from external APIs.
   - [Redux](https://redux.js.org/): a predictable state container for JavaScript apps.
   - [Google Maps React](https://www.npmjs.com/package/google-maps-react): a library that includes a helper to wrap around the Google maps API.
@@ -52,8 +52,8 @@ After the course, I re-designed the application by using Redux for state managem
 
 - Build a front-end web application that people would use and have fun playing around with.
 - Use and understand React design patterns and its testing frameworks Jest and Enzyme.
-- Use Redux for state management
-- Test Redux actions and reducers with integration tests
+- Use Redux for state management.
+- Test Redux actions and reducers with integration tests.
 - Handle nested asynchronous requests from multiple APIs within a React application.
 - Deploy a front-end app to AWS, given API restrictions for production websites.
 - Use Python to scrape data from the internet and save it into a usable JSON format.
