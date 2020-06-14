@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import MovieListMetadata from "../Helmets/MovieListMetadata";
 import MovieDetail from "../MovieDetail/MovieDetail";
 import { fetchMovieTitlesAndMovieData } from "../../actions";
 import queryString from "query-string";
@@ -12,7 +13,8 @@ class MovieList extends React.Component {
   getCountryFromUrl() {
     return this.props.match.params.country
       .split("%20")
-      .map((word) => word[0].toUpperCase() + word.slice(1));
+      .map((word) => word[0].toUpperCase() + word.slice(1))
+      .join(" ");
   }
 
   filterMovies = () => {
@@ -30,6 +32,7 @@ class MovieList extends React.Component {
   renderList() {
     return (
       <ul>
+        <MovieListMetadata country={this.getCountryFromUrl()} />
         {this.filterMovies().map((movie) => (
           <MovieDetail
             key={movie.imdbID}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Router, Route } from "react-router-dom";
 
+import AppMetadata from "../Helmets/AppMetadata";
 import Header from "../Header/Header";
 import SubHeader from "../SubHeader/SubHeader";
 import MapContainer from "../MapContainer/MapContainer";
@@ -10,6 +11,7 @@ import history from "../../history";
 const App = () => {
   return (
     <div>
+      <AppMetadata />
       <Router history={history}>
         <Route component={Header} />
         <Route component={SubHeader} />
