@@ -33,16 +33,18 @@ class MovieList extends React.Component {
     return (
       <ul>
         <MovieListMetadata country={this.getCountryFromUrl()} />
-        {this.filterMovies().map((movie) => (
-          <MovieDetail
-            key={movie.imdbID}
-            imdbID={movie.imdbID}
-            title={movie.Title}
-            plot={movie.Plot}
-            posterURL={movie.Poster}
-            releaseDate={movie.Released}
-          />
-        ))}
+        {this.filterMovies()
+          .sort((a, b) => b.Year - a.Year)
+          .map((movie) => (
+            <MovieDetail
+              key={movie.imdbID}
+              imdbID={movie.imdbID}
+              title={movie.Title}
+              plot={movie.Plot}
+              posterURL={movie.Poster}
+              year={movie.Year}
+            />
+          ))}
       </ul>
     );
   }
