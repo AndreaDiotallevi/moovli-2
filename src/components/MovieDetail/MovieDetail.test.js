@@ -13,7 +13,7 @@ describe("MovieDetail", () => {
         title={"Life Is Beautiful"}
         plot={"Plot"}
         posterURL={"https://posterURL"}
-        releaseDate={"12 Feb 1999"}
+        year={"1999"}
       />
     );
   });
@@ -40,6 +40,6 @@ describe("MovieDetail", () => {
 
   test("renders the movie's release date", () => {
     const releaseDate = findByTestAttr(wrapper, "movie-release-date-1");
-    expect(releaseDate.text()).toEqual("12 Feb 1999");
+    expect(releaseDate.text()).toEqual("1999");
   });
 });

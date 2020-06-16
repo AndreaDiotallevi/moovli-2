@@ -1,7 +1,7 @@
 import React from "react";
 import noPhotoAvailable from "../../assets/no-photo-available.jpg";
 
-const MovieDetail = ({ imdbID, title, plot, posterURL, releaseDate }) => {
+const MovieDetail = ({ imdbID, title, plot, posterURL, year }) => {
   const handleImageUrlError = (event) => {
     event.target.src = noPhotoAvailable;
   };
@@ -48,7 +48,7 @@ const MovieDetail = ({ imdbID, title, plot, posterURL, releaseDate }) => {
             data-test={`movie-release-date-${imdbID}`}
           >
             <span className="movie-release-date-title"></span>
-            {releaseDate}
+            {year}
           </p>
         </div>
       </div>
