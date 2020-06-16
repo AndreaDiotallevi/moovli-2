@@ -8,7 +8,7 @@ const Header = (props) => {
   const renderPageTitle = () => {
     if (!isHome) {
       const country = pathname.split("%20").join(" ").toUpperCase().slice(1);
-      return `WELCOME TO ${country}`;
+      return `BEST MOVIES FROM ${country}`;
     }
     return "THE MOVIE MAPPER";
   };

@@ -31,7 +31,7 @@ describe("Header", () => {
 
     test("renders WELCOME TO ITALY", () => {
       const header = findByTestAttr(wrapper, "header-title");
-      expect(header.text()).toEqual("WELCOME TO ITALY");
+      expect(header.text()).toEqual("BEST MOVIES FROM ITALY");
     });
 
     test("renders the back home link", () => {
