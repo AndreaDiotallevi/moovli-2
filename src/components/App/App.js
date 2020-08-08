@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from "react-ga";
 import { Router, Route } from "react-router-dom";
 
 import AppMetadata from "../Helmets/AppMetadata";
@@ -7,6 +8,11 @@ import SubHeader from "../SubHeader/SubHeader";
 import MapContainer from "../MapContainer/MapContainer";
 import MovieList from "../MovieList/MovieList";
 import history from "../../history";
+
+ReactGA.initialize("UA-174946804-1");
+history.listen((location, action) => {
+  ReactGA.pageview(location.pathname + location.search);
+});
 
 const App = () => {
   return (
